@@ -1,7 +1,5 @@
 # Auto-Responder de Emails
 
-Una aplicación de escritorio para responder automáticamente a correos electrónicos entrantes.
-
 ![Demo de la aplicación](demo.png)
 
 ## 🚀 Características
