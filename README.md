@@ -2,6 +2,8 @@
 
 Una aplicación de escritorio para responder automáticamente a correos electrónicos entrantes.
 
+![Demo de la aplicación](demo.png)
+
 ## 🚀 Características
 
 - **Interfaz gráfica moderna** con tema oscuro
