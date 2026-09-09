@@ -1,10 +1,6 @@
 # ✉️ Auto-Mail Answers
 
 <p align="center">
-  <img src="demo.png" alt="Auto-Mail Answers Demo" width="800" style="border-radius: 8px;">
-</p>
-
-<p align="center">
   <b>Automatización inteligente y eficiente para la gestión de respuestas por correo electrónico</b>
 </p>
 
@@ -13,6 +9,10 @@
   <img src="https://img.shields.io/badge/GUI-Tkinter-FF6F00?style=for-the-badge&logo=python&logoColor=white" alt="Tkinter GUI">
   <img src="https://img.shields.io/badge/Protocol-IMAP%20%2F%20SMTP-00599C?style=for-the-badge" alt="IMAP/SMTP">
   <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" alt="Status">
+</p>
+
+<p align="center">
+  <img src="demo.png" alt="Auto-Mail Answers Demo" width="800" style="border-radius: 8px;">
 </p>
 
 ---
