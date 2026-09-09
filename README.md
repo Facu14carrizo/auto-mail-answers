@@ -1,101 +1,69 @@
-# Auto-Responder de Emails
+# ✉️ Auto-Mail Answers
 
-![Demo de la aplicación](demo.png)
+<p align="center">
+  <img src="demo.png" alt="Auto-Mail Answers Demo" width="800" style="border-radius: 8px;">
+</p>
 
-## 🚀 Características
+<p align="center">
+  <b>Automatización inteligente y eficiente para la gestión de respuestas por correo electrónico</b>
+</p>
 
-- **Interfaz gráfica moderna** con tema oscuro
-- **Respuesta automática** a correos no leídos
-- **Modo continuo** para monitorear nuevos correos
-- **Historial** de emails respondidos
-- **Configuración persistente** de credenciales
-- **Soporte para servidores IMAP/SMTP** personalizados
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.7+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.7+">
+  <img src="https://img.shields.io/badge/GUI-Tkinter-FF6F00?style=for-the-badge&logo=python&logoColor=white" alt="Tkinter GUI">
+  <img src="https://img.shields.io/badge/Protocol-IMAP%20%2F%20SMTP-00599C?style=for-the-badge" alt="IMAP/SMTP">
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" alt="Status">
+</p>
 
-## 📋 Requisitos
+---
 
-- Python 3.7 o superior
-- Cuenta de email con acceso IMAP/SMTP
+## 📌 Descripción General
 
-## 🔧 Instalación
+**Auto-Mail Answers** es una herramienta de escritorio moderna diseñada para optimizar la atención por correo electrónico. Permite responder de manera automática a correos entrantes no leídos de forma rápida, segura e interactiva a través de una interfaz visual intuitiva en modo oscuro.
 
-1. **Clona el repositorio:**
-   ```bash
-   git clone <url-del-repositorio>
-   cd auto-aswers-py
-   ```
+Ideal para empresas, emprendimientos y áreas de soporte que requieren dar acuse de recibo inmediato a sus clientes sin intervención manual continua.
 
-2. **Instala las dependencias:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+---
 
-3. **Configura tus credenciales:**
-   - Edita `config.json` con tus datos reales
+## ✨ Características Principales
 
-## ⚙️ Configuración
+- 🎨 **Interfaz Gráfica Moderna**: Diseño limpio y profesional con tema oscuro (*Dark Mode*) que facilita la navegación.
+- ⚡ **Respuesta Automática Inmediata**: Procesa correos pendientes sin leer con un solo clic.
+- 🔄 **Monitoreo Continuo**: Ejecución en segundo plano para escuchar y responder nuevos emails en tiempo real.
+- 🛡️ **Prevención de Duplicados**: Sistema de registro e historial que garantiza responder únicamente una vez a cada remitente/mensaje.
+- ⏱️ **Procesamiento Multihilo**: Ejecución asíncrona mediante *threading* para mantener la interfaz fluida en todo momento.
+- 💾 **Persistencia Automática**: Conservación de parámetros y preferencias al cerrar la aplicación.
 
-### Archivo config.json
-```json
-{
-  "email": "tu-email@dominio.com",
-  "password": "tu-contraseña",
-  "subject": "Asunto de respuesta automática",
-  "mensaje": "Contenido del mensaje automático"
-}
-```
+---
 
-### Servidores de Email
-El programa está configurado para usar:
-- **IMAP/SMTP:** 
-- **Puerto SMTP:** 465 (SSL)
+## 🎯 Modo de Uso
 
-Para usar otros servidores, modifica las variables en `main.py`:
-```python
-IMAP_SERVER = 'tu-servidor-imap.com'
-SMTP_SERVER = 'tu-servidor-smtp.com'
-SMTP_PORT = 465
-```
+1. **Ingreso de Credenciales y Plantilla**:
+   - Ingrese el correo electrónico y la contraseña correspondiente.
+   - Defina el **Asunto** y el **Cuerpo del Mensaje** que se enviará automáticamente.
 
-## 🎯 Uso
+2. **Selección del Modo de Operación**:
+   - **Iniciar**: Realiza una única comprobación y responde a todos los correos no leídos actuales.
+   - **Modo Continuo**: Activa el monitoreo constante para enviar respuestas a medida que ingresan nuevos mensajes.
 
-1. **Ejecuta la aplicación:**
-   ```bash
-   python main.py
-   ```
+3. **Supervisión de Estado**:
+   - Visualice en tiempo real los registros (*logs*) y el estado del envío directamente desde el panel principal.
 
-2. **Completa los campos:**
-   - Email y contraseña
-   - Asunto del mensaje automático
-   - Contenido del mensaje
+---
 
-3. **Elige el modo:**
-   - **Iniciar:** Procesa correos una vez
-   - **Modo Continuo:** Monitorea continuamente nuevos correos
+## 💡 Aspectos Destacados
 
-## 📁 Estructura del Proyecto
+> [!NOTE]  
+> **Gestión Inteligente de Lectura**  
+> El sistema marca automáticamente los mensajes procesados como leídos y registra el ID en el historial para evitar reenvíos accidentales.
 
-```
-auto-aswers-py/
-├── main.py                 # Código principal
-├── config.json            # Configuración principal
-├── respondidos.txt        # Historial de emails 
-├── requirements.txt       # Dependencias
-└── README.md             # Este archivo
-```
+> [!TIP]  
+> **Ejecución en Segundo Plano**  
+> Gracias a su arquitectura multihilo, la interfaz permanece 100% responsiva sin congelarse durante los procesos de consulta o envío masivo.
 
-### Estructura del código
-- **Interfaz gráfica:** Tkinter con tema oscuro
-- **Comunicación email:** imapclient + smtplib
-- **Persistencia:** JSON para configuración, TXT para historial
-- **Threading:** Operaciones de email en hilos separados
-
-## 📝 Notas
-
-- El programa marca automáticamente los correos como leídos
-- Solo responde a correos no leídos
-- Evita respuestas duplicadas usando el historial
-- Guarda la configuración automáticamente al cerrar
+---
 
 ## 📄 Licencia
 
-Este proyecto es de uso interno para empresas.
+Este proyecto está destinado a uso corporativo e interno. Todos los derechos reservados.
+
